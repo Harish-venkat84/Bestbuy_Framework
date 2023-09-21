@@ -49,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Sep 19, 2023 03:40:20 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Sep 21, 2023 08:00:19 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -76,7 +76,7 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@checkout</a></li>
+					<li><a href='#'>@LoginWithInvalidCredentials</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -141,7 +141,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='100%'>
-                    1</span> scenarios failed, 
+                    2</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -160,10 +160,10 @@
                     <span class='strong'>0</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='8%'>
-                    1</span> steps failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='91%'>
-                    11</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='16%'>
+                    2</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='83%'>
+                    10</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> others
                 </div>
@@ -186,8 +186,8 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Validating Checkout Functionality</span>
-						<span class='test-time'>Sep 19, 2023 03:40:22 pm</span>
+						<span class='test-name'>Validating Longin Functionality</span>
+						<span class='test-time'>Sep 21, 2023 08:00:21 pm</span>
 						<span class='test-status right fail'>Fail</span>
 					</div>
 					<div class='test-content hide'>
@@ -198,90 +198,96 @@
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
 
-<div class='scenario node' test-id='2' status='fail'>
+<div class='scenario outline node' test-id='2' status='fail'>
 
-	<span class='duration right label'>00 00 00.073</span>
+	<span class='duration right label'>00 00 00.276</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Verifying Checkout</div>
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: Login With Invalid Credentials</div>
 	</div>
 	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>mailID</td><td>Password</td></tr><tr><td>"test123@gmail.com"</td><td>"123456788"</td></tr><tr><td>"harish123@gmail.com"</td><td>"password123@"</td></tr></table></div>
 	
-		<div class='category-list'>
-				<span class='category label'>@checkout</span>
-		</div>
 	
 	<ul class='steps'>
-		<li test-id='3' class='node given Fail' status='Fail'>
-			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Given User Click the Select a store to see availability Radio button</div>
+		<li test-id='3' class='node scenario Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Login With Invalid Credentials</div>
 
+				<div class='category-list'>
+						<span class='category label'>@LoginWithInvalidCredentials</span>
+				</div>
 
-					<div class="node-step">Step undefined</div>
+			<ul class='gc steps'>
+				<li test-id='4' class='gc given Fail' status='Fail'>
+					<h6 class="step-name" title=""><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Given User click the account field on the Home Page</h6>
+
+							<div class="node-step">Step undefined</div>
+				</li>
+				<li test-id='6' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title=""><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And Click SigIn button to navigate sigIn page</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='8' class='gc when Skip' status='Skip'>
+					<h6 class="step-name" title=""><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When User Enter the Invalid Mail Id "test123@gmail.com" in the Input Field</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='10' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title=""><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And Enter the Invalid Password "123456788" in the Password Field</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='12' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title=""><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And Click the SigIn button</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='14' class='gc then Skip' status='Skip'>
+					<h6 class="step-name" title=""><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then Validate the Error Message	is shown to user</h6>
+
+							<div class="node-step">Step skipped</div>
+				</li>
+			</ul>
 		</li>
-		<li test-id='5' class='node and Skip' status='Skip'>
-			<div class="step-name" title="()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User Enter PinCode in the Input Field "99504"</div>
+		<li test-id='16' class='node scenario Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Login With Invalid Credentials</div>
 
+				<div class='category-list'>
+						<span class='category label'>@LoginWithInvalidCredentials</span>
+				</div>
 
-					<div class="node-step">Step skipped</div>
-		</li>
-		<li test-id='7' class='node and Skip' status='Skip'>
-			<div class="step-name" title="()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And Click the Go button</div>
+			<ul class='gc steps'>
+				<li test-id='17' class='gc given Fail' status='Fail'>
+					<h6 class="step-name" title=""><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Given User click the account field on the Home Page</h6>
 
+							<div class="node-step">Step undefined</div>
+				</li>
+				<li test-id='19' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title=""><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And Click SigIn button to navigate sigIn page</h6>
 
-					<div class="node-step">Step skipped</div>
-		</li>
-		<li test-id='9' class='node and Skip' status='Skip'>
-			<div class="step-name" title="()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User Select First Listed City, Pick Up here button</div>
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='21' class='gc when Skip' status='Skip'>
+					<h6 class="step-name" title=""><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>When User Enter the Invalid Mail Id "harish123@gmail.com" in the Input Field</h6>
 
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='23' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title=""><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And Enter the Invalid Password "password123@" in the Password Field</h6>
 
-					<div class="node-step">Step skipped</div>
-		</li>
-		<li test-id='11' class='node and Skip' status='Skip'>
-			<div class="step-name" title="()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And Click the Checkout button</div>
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='25' class='gc and Skip' status='Skip'>
+					<h6 class="step-name" title=""><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And Click the SigIn button</h6>
 
+							<div class="node-step">Step skipped</div>
+				</li>
+				<li test-id='27' class='gc then Skip' status='Skip'>
+					<h6 class="step-name" title=""><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then Validate the Error Message	is shown to user</h6>
 
-					<div class="node-step">Step skipped</div>
-		</li>
-		<li test-id='13' class='node and Skip' status='Skip'>
-			<div class="step-name" title="()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User Click the Continue as Guest button</div>
-
-
-					<div class="node-step">Step skipped</div>
-		</li>
-		<li test-id='15' class='node and Skip' status='Skip'>
-			<div class="step-name" title="()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And Scroll Down to visible of Email Address Input Field</div>
-
-
-					<div class="node-step">Step skipped</div>
-		</li>
-		<li test-id='17' class='node and Skip' status='Skip'>
-			<div class="step-name" title="()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User Enter the Email Address</div>
-
-
-					<div class="node-step">Step skipped</div>
-		</li>
-		<li test-id='19' class='node and Skip' status='Skip'>
-			<div class="step-name" title="()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And Enter the Mobile Number</div>
-
-
-					<div class="node-step">Step skipped</div>
-		</li>
-		<li test-id='21' class='node and Skip' status='Skip'>
-			<div class="step-name" title="()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And Click the Want to Want to receive text updates? Check box</div>
-
-
-					<div class="node-step">Step skipped</div>
-		</li>
-		<li test-id='23' class='node and Skip' status='Skip'>
-			<div class="step-name" title="()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User Click the Continue to Mobile Setup</div>
-
-
-					<div class="node-step">Step skipped</div>
-		</li>
-		<li test-id='25' class='node then Skip' status='Skip'>
-			<div class="step-name" title="()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then Verify the Payment URL</div>
-
-
-					<div class="node-step">Step skipped</div>
+							<div class="node-step">Step skipped</div>
+				</li>
+			</ul>
 		</li>
 	</ul>
 </div>
@@ -329,15 +335,15 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@checkout</span>
+						<span class='category-name'>@LoginWithInvalidCredentials</span>
 						<span class='category-status right'>
-						<span class='label fail'>1</span>
+						<span class='label fail'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -351,8 +357,13 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Sep 19, 2023 03:40:22 pm</td>
-										<td class='linked' test-id='2'>Verifying Checkout</td>
+										<td>Sep 21, 2023 08:00:21 pm</td>
+										<td class='linked' test-id='3'>Login With Invalid Credentials</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Sep 21, 2023 08:00:22 pm</td>
+										<td class='linked' test-id='16'>Login With Invalid Credentials</td>
 										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 								</tbody>
@@ -383,7 +394,7 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -395,19 +406,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Sep 19, 2023 03:40:20 pm</div>
+					<div class='panel-lead'>Sep 21, 2023 08:00:19 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Sep 19, 2023 03:40:23 pm</div>
+			 		<div class='panel-lead'>Sep 21, 2023 08:00:23 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 02.809</div>
+					<div class='panel-lead'>00 00 03.266</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -443,9 +454,9 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@checkout</td>
+							<td>@LoginWithInvalidCredentials</td>
 							<td>0</td>
-							<td>1</td>
+							<td>2</td>
 							<td>0</td>
 							<td>
 									0%
@@ -469,9 +480,9 @@
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 1,
+				childCount: 2,
 				passChild: 0,
-				failChild: 1,
+				failChild: 2,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
@@ -479,18 +490,18 @@
 				infoChild: 0,
 				grandChildCount: 12,
 				passGrandChild: 0,
-				failGrandChild: 1,
+				failGrandChild: 2,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 11,
+				skipGrandChild: 10,
 				infoGrandChild: 0,
 			};
 			</script>
 		
 		<script>
 			var timeline = {
-			        "Validating Checkout Functionality":0.081
+			        "Validating Longin Functionality":0.285
 			};
 		</script>
 		

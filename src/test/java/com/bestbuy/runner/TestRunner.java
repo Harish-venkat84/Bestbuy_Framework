@@ -14,7 +14,7 @@ import io.cucumber.testng.CucumberOptions;
 			plugin = {"json:target/reports/Bestbuy.json", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}, 
 	
 //			tags = "@ChooseCountry or @menuCategories")
-			tags = "@checkout")
+			tags = "@LoginWithInvalidCredentials")
 
 public class TestRunner extends AbstractTestNGCucumberTests {
 

@@ -9,7 +9,7 @@ import com.bestbuy.po_models.CreateAnAccount;
 import com.bestbuy.po_models.HomePage;
 import com.bestbuy.po_models.SearchResultPage;
 import com.bestbuy.po_models.SelectCountryPage;
-import com.bestbuy.po_models.Sign_In;
+import com.bestbuy.po_models.LoginPage;
 
 // this class is to return object of page object models package classes
 
@@ -23,7 +23,7 @@ public class PageObjectManager {
 	
 	private CreateAnAccount createAccount;
 	
-	private Sign_In logIn;
+	private LoginPage logIn;
 	
 	private CartPage cart;
 	
@@ -71,11 +71,11 @@ public class PageObjectManager {
 		return createAccount;
 	}
 	
-	public Sign_In getSignIn() {
+	public LoginPage getSignIn() {
 		
 		if (logIn == null) {
 			
-			logIn = new Sign_In(driver);
+			logIn = new LoginPage(driver);
 		}
 		
 		return logIn;

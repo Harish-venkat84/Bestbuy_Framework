@@ -1,167 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-19T15:40:20 IST" name="Default suite" finished-at="2023-09-19T15:40:24 IST" duration-ms="4507">
+  <suite started-at="2023-09-21T20:00:19 IST" name="Default suite" finished-at="2023-09-21T20:00:24 IST" duration-ms="4836">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.bestbuy.runner.TestRunner@2654635]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-09-19T15:40:20 IST" name="Default test" finished-at="2023-09-19T15:40:24 IST" duration-ms="4507">
+    <test started-at="2023-09-21T20:00:19 IST" name="Default test" finished-at="2023-09-21T20:00:24 IST" duration-ms="4836">
       <class name="com.bestbuy.runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.bestbuy.runner.TestRunner@2654635]" started-at="2023-09-19T15:40:20 IST" name="setUpClass" finished-at="2023-09-19T15:40:22 IST" duration-ms="1590" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.bestbuy.runner.TestRunner@2654635]" started-at="2023-09-21T20:00:19 IST" name="setUpClass" finished-at="2023-09-21T20:00:21 IST" duration-ms="1729" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5377414a]]>
+                <![CDATA[org.testng.TestRunner@221a2068]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.bestbuy.runner.TestRunner@2654635]" started-at="2023-09-19T15:40:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-19T15:40:22 IST" duration-ms="779" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.bestbuy.runner.TestRunner@2654635]" started-at="2023-09-21T20:00:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-21T20:00:22 IST" duration-ms="767" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verifying Checkout"]]>
+                <![CDATA["Login With Invalid Credentials"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Validating Checkout Functionality"]]>
+                <![CDATA["Validating Longin Functionality"]]>
               </value>
             </param>
           </params>
           <exception class="io.cucumber.testng.UndefinedStepException">
             <message>
-              <![CDATA[The step 'User Click the Select a store to see availability Radio button' and 11 other step(s) are undefined.
+              <![CDATA[The step 'User click the account field on the Home Page' and 5 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
 
-@Given("User Click the Select a store to see availability Radio button")
-public void user_click_the_select_a_store_to_see_availability_radio_button() {
+@Given("User click the account field on the Home Page")
+public void user_click_the_account_field_on_the_home_page() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Given("User Enter PinCode in the Input Field {string}")
-public void user_enter_pin_code_in_the_input_field(String string) {
+@Given("Click SigIn button to navigate sigIn page")
+public void click_sig_in_button_to_navigate_sig_in_page() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Given("Click the Go button")
-public void click_the_go_button() {
+@When("User Enter the Invalid Mail Id {string} in the Input Field")
+public void user_enter_the_invalid_mail_id_in_the_input_field(String string) {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Given("User Select First Listed City, Pick Up here button")
-public void user_select_first_listed_city_pick_up_here_button() {
+@When("Enter the Invalid Password {string} in the Password Field")
+public void enter_the_invalid_password_in_the_password_field(String string) {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Given("Click the Checkout button")
-public void click_the_checkout_button() {
+@When("Click the SigIn button")
+public void click_the_sig_in_button() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Given("User Click the Continue as Guest button")
-public void user_click_the_continue_as_guest_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("Scroll Down to visible of Email Address Input Field")
-public void scroll_down_to_visible_of_email_address_input_field() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("User Enter the Email Address")
-public void user_enter_the_email_address() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("Enter the Mobile Number")
-public void enter_the_mobile_number() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("Click the Want to Want to receive text updates? Check box")
-public void click_the_want_to_want_to_receive_text_updates_check_box() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("User Click the Continue to Mobile Setup")
-public void user_click_the_continue_to_mobile_setup() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("Verify the Payment URL")
-public void verify_the_payment_url() {
+@Then("Validate the Error Messageis shown to user")
+public void validate_the_error_message_is_shown_to_user() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
 ]]>
             </message>
             <full-stacktrace>
-              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'User Click the Select a store to see availability Radio button' and 11 other step(s) are undefined.
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'User click the account field on the Home Page' and 5 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
 
-@Given("User Click the Select a store to see availability Radio button")
-public void user_click_the_select_a_store_to_see_availability_radio_button() {
+@Given("User click the account field on the Home Page")
+public void user_click_the_account_field_on_the_home_page() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Given("User Enter PinCode in the Input Field {string}")
-public void user_enter_pin_code_in_the_input_field(String string) {
+@Given("Click SigIn button to navigate sigIn page")
+public void click_sig_in_button_to_navigate_sig_in_page() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Given("Click the Go button")
-public void click_the_go_button() {
+@When("User Enter the Invalid Mail Id {string} in the Input Field")
+public void user_enter_the_invalid_mail_id_in_the_input_field(String string) {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Given("User Select First Listed City, Pick Up here button")
-public void user_select_first_listed_city_pick_up_here_button() {
+@When("Enter the Invalid Password {string} in the Password Field")
+public void enter_the_invalid_password_in_the_password_field(String string) {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Given("Click the Checkout button")
-public void click_the_checkout_button() {
+@When("Click the SigIn button")
+public void click_the_sig_in_button() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Given("User Click the Continue as Guest button")
-public void user_click_the_continue_as_guest_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("Scroll Down to visible of Email Address Input Field")
-public void scroll_down_to_visible_of_email_address_input_field() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("User Enter the Email Address")
-public void user_enter_the_email_address() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("Enter the Mobile Number")
-public void enter_the_mobile_number() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("Click the Want to Want to receive text updates? Check box")
-public void click_the_want_to_want_to_receive_text_updates_check_box() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given("User Click the Continue to Mobile Setup")
-public void user_click_the_continue_to_mobile_setup() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("Verify the Payment URL")
-public void verify_the_payment_url() {
+@Then("Validate the Error Messageis shown to user")
+public void validate_the_error_message_is_shown_to_user() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
@@ -208,7 +148,134 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.bestbuy.runner.TestRunner@2654635]" started-at="2023-09-19T15:40:22 IST" name="tearDownClass" finished-at="2023-09-19T15:40:24 IST" duration-ms="1947" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.bestbuy.runner.TestRunner@2654635]" started-at="2023-09-21T20:00:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-21T20:00:22 IST" duration-ms="166" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login With Invalid Credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validating Longin Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'User click the account field on the Home Page' and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("User click the account field on the Home Page")
+public void user_click_the_account_field_on_the_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("Click SigIn button to navigate sigIn page")
+public void click_sig_in_button_to_navigate_sig_in_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User Enter the Invalid Mail Id {string} in the Input Field")
+public void user_enter_the_invalid_mail_id_in_the_input_field(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Enter the Invalid Password {string} in the Password Field")
+public void enter_the_invalid_password_in_the_password_field(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Click the SigIn button")
+public void click_the_sig_in_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Validate the Error Messageis shown to user")
+public void validate_the_error_message_is_shown_to_user() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'User click the account field on the Home Page' and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("User click the account field on the Home Page")
+public void user_click_the_account_field_on_the_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("Click SigIn button to navigate sigIn page")
+public void click_sig_in_button_to_navigate_sig_in_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User Enter the Invalid Mail Id {string} in the Input Field")
+public void user_enter_the_invalid_mail_id_in_the_input_field(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Enter the Invalid Password {string} in the Password Field")
+public void enter_the_invalid_password_in_the_password_field(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Click the SigIn button")
+public void click_the_sig_in_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Validate the Error Messageis shown to user")
+public void validate_the_error_message_is_shown_to_user() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.bestbuy.runner.TestRunner@2654635]" started-at="2023-09-21T20:00:22 IST" name="tearDownClass" finished-at="2023-09-21T20:00:24 IST" duration-ms="1981" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -10,7 +10,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class LogIn extends BaseUtils{
+public class LogIn_WithValidCredentials extends BaseUtils{
 	
 	
 	@Given("User click the account field")

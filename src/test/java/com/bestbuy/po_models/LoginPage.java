@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import lombok.Getter;
 
 @Getter
-public class Sign_In {
+public class LoginPage {
 
 	public WebDriver driver; 
 	
@@ -24,7 +24,7 @@ public class Sign_In {
 	@FindBy(xpath = "//strong//child::div")
 	private WebElement errorMessage;
 	
-	public Sign_In(WebDriver driver2) {
+	public LoginPage(WebDriver driver2) {
 		
 		this.driver = driver2;
 		

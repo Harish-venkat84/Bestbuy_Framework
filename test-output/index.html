@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Flash\AppData\Local\Temp\testng-eclipse--1103073825\testng-customsuite.xml</span>
+                    <span>C:\Users\Flash\AppData\Local\Temp\testng-eclipse-974228047\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,7 +103,12 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.bestbuy.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verifying Checkout&quot;, &quot;Validating Checkout Functionality&quot;)">runScenario("Verifying Checkout", "Validating Checkout Functionality")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.bestbuy.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login With Invalid Credentials&quot;, &quot;Validating Longin Functionality&quot;)">runScenario("Login With Invalid Credentials", "Validating Longin Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.bestbuy.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login With Invalid Credentials&quot;, &quot;Validating Longin Functionality&quot;)">runScenario("Login With Invalid Credentials", "Validating Longin Functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -126,70 +131,122 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Verifying Checkout&quot;, &quot;Validating Checkout Functionality&quot;)">
-                  </a> <!-- runScenario("Verifying Checkout", "Validating Checkout Functionality") -->
+                  <a name="runScenario(&quot;Login With Invalid Credentials&quot;, &quot;Validating Longin Functionality&quot;)">
+                  </a> <!-- runScenario("Login With Invalid Credentials", "Validating Longin Functionality") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verifying Checkout","Validating Checkout Functionality")</span>
-                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;User Click the Select a store to see availability Radio button&apos; and 11 other step(s) are undefined.
+                  <span class="parameters">("Login With Invalid Credentials","Validating Longin Functionality")</span>
+                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;User click the account field on the Home Page&apos; and 5 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
 
-@Given(&quot;User Click the Select a store to see availability Radio button&quot;)
-public void user_click_the_select_a_store_to_see_availability_radio_button() {
+@Given(&quot;User click the account field on the Home Page&quot;)
+public void user_click_the_account_field_on_the_home_page() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Given(&quot;User Enter PinCode in the Input Field {string}&quot;)
-public void user_enter_pin_code_in_the_input_field(String string) {
+@Given(&quot;Click SigIn button to navigate sigIn page&quot;)
+public void click_sig_in_button_to_navigate_sig_in_page() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Given(&quot;Click the Go button&quot;)
-public void click_the_go_button() {
+@When(&quot;User Enter the Invalid Mail Id {string} in the Input Field&quot;)
+public void user_enter_the_invalid_mail_id_in_the_input_field(String string) {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Given(&quot;User Select First Listed City, Pick Up here button&quot;)
-public void user_select_first_listed_city_pick_up_here_button() {
+@When(&quot;Enter the Invalid Password {string} in the Password Field&quot;)
+public void enter_the_invalid_password_in_the_password_field(String string) {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Given(&quot;Click the Checkout button&quot;)
-public void click_the_checkout_button() {
+@When(&quot;Click the SigIn button&quot;)
+public void click_the_sig_in_button() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Given(&quot;User Click the Continue as Guest button&quot;)
-public void user_click_the_continue_as_guest_button() {
+@Then(&quot;Validate the Error Message	is shown to user&quot;)
+public void validate_the_error_message_is_shown_to_user() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Given(&quot;Scroll Down to visible of Email Address Input Field&quot;)
-public void scroll_down_to_visible_of_email_address_input_field() {
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login With Invalid Credentials&quot;, &quot;Validating Longin Functionality&quot;)">
+                  </a> <!-- runScenario("Login With Invalid Credentials", "Validating Longin Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login With Invalid Credentials","Validating Longin Functionality")</span>
+                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;User click the account field on the Home Page&apos; and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;User click the account field on the Home Page&quot;)
+public void user_click_the_account_field_on_the_home_page() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Given(&quot;User Enter the Email Address&quot;)
-public void user_enter_the_email_address() {
+@Given(&quot;Click SigIn button to navigate sigIn page&quot;)
+public void click_sig_in_button_to_navigate_sig_in_page() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Given(&quot;Enter the Mobile Number&quot;)
-public void enter_the_mobile_number() {
+@When(&quot;User Enter the Invalid Mail Id {string} in the Input Field&quot;)
+public void user_enter_the_invalid_mail_id_in_the_input_field(String string) {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Given(&quot;Click the Want to Want to receive text updates? Check box&quot;)
-public void click_the_want_to_want_to_receive_text_updates_check_box() {
+@When(&quot;Enter the Invalid Password {string} in the Password Field&quot;)
+public void enter_the_invalid_password_in_the_password_field(String string) {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Given(&quot;User Click the Continue to Mobile Setup&quot;)
-public void user_click_the_continue_to_mobile_setup() {
+@When(&quot;Click the SigIn button&quot;)
+public void click_the_sig_in_button() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Then(&quot;Verify the Payment URL&quot;)
-public void verify_the_payment_url() {
+@Then(&quot;Validate the Error Message	is shown to user&quot;)
+public void validate_the_error_message_is_shown_to_user() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
@@ -241,7 +298,7 @@ public void verify_the_payment_url() {
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Flash\AppData\Local\Temp\testng-eclipse--1103073825\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Flash\AppData\Local\Temp\testng-eclipse-974228047\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -298,16 +355,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.bestbuy.runner.TestRunner')
-data.setCell(0, 3, 779);
+data.setCell(0, 3, 767);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'com.bestbuy.runner.TestRunner')
+data.setCell(1, 3, 166);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 779 ms</span>
+              <span class="suite-total-time">Total running time: 933 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -335,18 +396,24 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.bestbuy.runner.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@5377414a)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@221a2068)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">runScenario("Verifying Checkout", "Validating Checkout Functionality")</span>
-                <span class="method-start">1644 ms</span>
+                <span class="method-name">runScenario("Login With Invalid Credentials", "Validating Longin Functionality")</span>
+                <span class="method-start">1782 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Login With Invalid Credentials", "Validating Longin Functionality")</span>
+                <span class="method-start">2574 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">2483 ms</span>
+                <span class="method-start">2768 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
